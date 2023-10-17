@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="vega_lite_vis.js"></script>
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen">
+    <title>Earthquakes in Australia</title>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <h1>Earthquakes in Australia</h1>
+        <p>
+            Earthquakes in Australia occur due to the release of built up stresses within the tectonic plate. As there
+            is no major fault lines within Australia, earthquakes on average tend to be weaker and occur at shallower depths. 
+        </p>
+        <div class="divMap"> 
+            <div id="map" class="graph"></div>
+        </div>
+
+        <div class="divLine" style="display: table-row">
+            <div style="display: table-cell; vertical-align: top;">
+                <p style="padding-top: 20px;">
+                    As Australia is in the middle of a tectonic plate, earthquakes occur relatively infrequently.
+                    Compared to a country like New Zealand which is located directly between two tectonic plates,
+                    Australia recieves an order of magnitude fewer earthquakes despite being almost 29 times larger
+                </p>
+            </div>
+            <div style="display: table-cell;">
+                <div id="line_count_au" class="graph"></div>
+                <div id="line_count_nz" class="graph"></div>
+            </div>
+        </div>
+
+        <div class="divLine" style="display: table-row">
+            <div style="display: table-cell; vertical-align: top;">
+                <div id="scatter_depth_au" class="graph"></div>
+                <div id="scatter_depth_nz" class="graph"></div>
+            </div>
+            <div style="display: table-cell;">
+                <p style="padding-top: 20px;">
+                    At shallower depths, the magnitude of earthquakes has greater variability. As the depth increases,
+                    the variability in magnidue decreases and trends towards the median value. This trend is much more
+                    visible in the New Zealand data due to the greater number of earthquakes.
+                </p>
+                <p style="padding-top: 20px;">
+                    New Zealand being on a boundary between two tectonic plates also experiences much deeper earthquakes at roughly 10x the depth
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

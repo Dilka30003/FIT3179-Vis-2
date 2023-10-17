@@ -1,0 +1,23 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 200,
+    "title": "Number of Earthquakes in Australia",
+    "data": {
+        "url": "data/earthquakes_export.csv"
+    },
+    "mark": "line",
+    "encoding": {
+        "x": {
+            "title": "Year",
+            "timeUnit": "year",
+            "field": "origin_time"
+        },
+        "y": {
+            "title": "Number of Earthquakes",
+            "aggregate": "count",
+            "field": "preffered_magnitude",
+            "type": "quantitative"
+        }
+    }
+}

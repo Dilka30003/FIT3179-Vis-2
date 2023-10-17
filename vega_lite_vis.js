@@ -1,0 +1,10 @@
+var vg_1 = "map.vg.json";
+vegaEmbed("#map", vg_1).then(function(result) {}).catch(console.error);
+var vg_2 = "line_count_au.vg.json";
+vegaEmbed("#line_count_au", vg_2).then(function(result) {}).catch(console.error);
+var vg_3 = "line_count_nz.vg.json";
+vegaEmbed("#line_count_nz", vg_3).then(function(result) {}).catch(console.error);
+var vg_4 = "scatter_depth_au.vg.json";
+vegaEmbed("#scatter_depth_au", vg_4).then(function(result) {}).catch(console.error);
+var vg_5 = "scatter_depth_nz.vg.json";
+vegaEmbed("#scatter_depth_nz", vg_5).then(function(result) {}).catch(console.error);

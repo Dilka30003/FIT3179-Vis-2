@@ -1,0 +1,29 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 200,
+    "title": "Depth vs Magnitude of Earthquakes in Australia",
+    "data": {"url": "data/earthquakes_export.csv"},
+    "transform": [
+      {"filter": "datum.preferred_magnitude > 0 && datum.depth > 0"}
+    ],
+    "mark": {
+        "type": "point",
+        "size": 1,
+        "shape": "circle",
+        "strokeWidth": 1,
+        "tooltip": true
+      },
+    "encoding": {
+      "x": {
+        "field": "depth",
+        "type": "quantitative",
+        "title": "Depth (Km)"
+      },
+      "y": {
+        "field": "preferred_magnitude",
+        "type": "quantitative",
+        "title": "Magnitude"
+      }
+    }
+  }
