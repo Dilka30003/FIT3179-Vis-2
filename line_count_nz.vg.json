@@ -4,7 +4,7 @@
     "height": 200,
     "title": "Number of Earthquakes in New Zealand",
     "data": {
-        "url": "data/earthquakes_nz.csv"
+        "url": "https://raw.githubusercontent.com/Dilka30003/FIT3179-Vis-2/main/data/earthquakes_nz.csv"
     },
     "mark": "line",
     "encoding": {

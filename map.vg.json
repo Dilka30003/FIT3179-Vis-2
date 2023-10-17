@@ -41,7 +41,7 @@
       },
       {
         "data": {
-          "url": "data/earthquakes_export.csv"
+          "url": "https://raw.githubusercontent.com/Dilka30003/FIT3179-Vis-2/main/data/earthquakes_export.csv"
         },
         "projection": { 
           "type": "mercator"

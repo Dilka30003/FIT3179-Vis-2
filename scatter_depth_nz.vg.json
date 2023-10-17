@@ -3,7 +3,7 @@
     "width": 500,
     "height": 200,
     "title": "Depth vs Magnitude of Earthquakes in New Zealand",
-    "data": {"url": "data/earthquakes_nz.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/Dilka30003/FIT3179-Vis-2/main/data/earthquakes_nz.csv"},
     "transform": [
       {"filter": "datum.preferred_magnitude > 0 && datum.depth > 0"}
     ],

@@ -4,7 +4,7 @@
     "height": 200,
     "title": "Number of Earthquakes in Australia",
     "data": {
-        "url": "data/earthquakes_export.csv"
+        "url": "https://raw.githubusercontent.com/Dilka30003/FIT3179-Vis-2/main/data/earthquakes_export.csv"
     },
     "mark": "line",
     "encoding": {
