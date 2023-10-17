@@ -6,7 +6,11 @@
     "data": {
         "url": "https://raw.githubusercontent.com/Dilka30003/FIT3179-Vis-2/main/data/earthquakes_export.csv"
     },
-    "mark": "line",
+    "mark": {
+        "type": "line",
+        "point": true,
+        "tooltip": true
+    },
     "encoding": {
         "x": {
             "title": "Year",
